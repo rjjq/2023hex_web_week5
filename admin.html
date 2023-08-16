@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer dashboard</title>
+  <script type="module" crossorigin src="/2023hex_web_week5/assets/admin-5932cc11.js"></script>
+  <link rel="stylesheet" href="/2023hex_web_week5/assets/admin-0155fee6.css">
+</head>
+<body>
+    
+    <div class="nav d-flex flex-column justify-content-between py-32">
+    <div class="nav-top">
+        <div class="mb-32">
+            <a href="#" class="px-32">
+                <img src="/2023hex_web_week5/assets/logo-ANSWER-5336fb45.svg" alt="Answer Logo">
+            </a>
+        </div>
+
+        <ul class="list-unstyled">
+            <li class="mb-4 px-32">
+                <a href="#" class="navlink fw-bold">
+                    <span class="material-icons me-3 align-middle">analytics</span>
+                    Dashboard
+                </a>
+            </li>
+            <li class="mb-4 px-32">
+                <a href="#" class="navlink fw-bold">
+                    <span class="material-icons me-3 align-middle">question_answer</span>
+                    Question
+                </a>
+            </li>
+            <li class="mb-4 px-32">
+                <a href="#" class="navlink fw-bold">
+                    <span class="material-icons me-3 align-middle">assignment</span>
+                    Assignment
+                </a>
+            </li>
+            <li class="mb-4 px-32">
+                <a href="#" class="navlink fw-bold">
+                    <span class="material-icons me-3 align-middle">video_library</span>
+                    Course
+                </a>
+            </li>
+            <li class="mb-4 px-32">
+                <a href="#" class="navlink fw-bold active text-success">
+                    <span class="material-icons me-3 align-middle">supervisor_account</span>
+                    Admin
+                </a>
+            </li>
+            <li class="mb-4 px-32">
+                <a href="#" class="navlink fw-bold">
+                    <span class="material-icons me-3 align-middle">settings</span>
+                    Settings
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="nav-bottom d-flex px-32">
+        <div class="user-avator me-3"></div>
+        <div class="user-info">
+            <div class="fs-6 fw-bold">Andy Chen</div>
+            <p class="text-secondary fs-14">andy0401@mail.com</p>
+        </div>
+    </div>
+</div>
+    <div class="main">
+        <div class="container p-32">
+            <nav class="navbar mb-5">
+                <div class="container-fluid">
+                    <div class="navbar-left d-flex">
+                        <a class="navbar-brand fs-4 fw-bold me-5 align-middle" href="#">Admin</a>
+                        <a class="btn d-flex align-items-center p-0 fw-bold" data-bs-toggle="modal" data-bs-target="#add-new-admin">
+                            <span class="material-icons me-1 align-middle">add</span>New Admin
+                        </a>
+
+                        <div class="modal fade" tabindex="-1" id="add-new-admin" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header p-32 border-bottom-0">
+          <div class="fs-4">New Admin</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-32">
+            <div class="fs-20 fw-bold mb-3">Account</div>
+            
+            <div class="mb-3">
+                <label for="account-name" class="fs-14 form-label mb-1">Name</label>
+                <input type="text" class="form-control" id="account-name">
+            </div>
+            <div class="mb-4">
+                <label for="account-email" class="fs-14 form-label mb-1">Email address</label>
+                <input type="email" class="form-control" id="account-email">
+            </div>
+            <hr class="text-gray-400 mb-4">
+
+            <div class="fs-20 fw-bold mb-3">Verification</div>
+            <div class="fw-bold d-flex align-items-center mb-3">
+                <span class="material-icons me-1 align-middle text-danger">report_problem</span> Unverified
+            </div>
+            <div class="btn btn-outline-primary d-block fw-bold py-3 mb-4">Send Verification Mail</div>
+            <hr class="text-gray-400 mb-4">
+            
+            <div class="fs-20 fw-bold mb-3">Access Level</div>
+            <select class="form-select mb-4 text-gray-600" aria-label="Access Level">
+                <option selected>-Choose access level-</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <hr class="text-gray-400 mb-4">
+            
+            <div class="fs-20 fw-bold mb-3">Custom Access</div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-lecture">
+                <label class="form-check-label" for="check-lecture">Lecture</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-oupon">
+                <label class="form-check-label" for="check-oupon">Coupon</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-message">
+                <label class="form-check-label" for="check-message">Message</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-setting">
+                <label class="form-check-label" for="check-setting">Setting</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-task-menu">
+                <label class="form-check-label" for="check-task-menu">Task Menu</label>
+            </div>
+
+        </div>
+        <div class="modal-footer mx-32 py-3 px-0">
+          <div class="btn btn-outline-primary me-4 py-2 px-32" data-bs-dismiss="modal">Cancel</div>
+          <div class="btn btn-primary me-0 py-2 px-32">Add</div>
+        </div>
+      </div>
+    </div>
+</div>                    </div>
+                    <div class="navbar-right">
+                        <a href="#"><span class="material-icons me-4 align-middle">search</span></a>
+                        <a href="#"><span class="material-icons align-middle">notifications_active</span></a>
+                    </div>
+                </div>
+            </nav>
+
+            <table class="table table-hover mt-3 mb-5 admin-table">
+                <thead>
+                  <tr>
+                    <th class="col-1" scope="col">
+                        ID
+                        <span class="material-icons text-success align-middle ps-1">arrow_downward</span>
+                    </th>
+                    <th class="col-3" scope="col">Name</th>
+                    <th class="col-4" scope="col">Email</th>
+                    <th class="col-2" scope="col">Verified</th>
+                    <th class="col-2" scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">#1</th>
+                    <td>Emir Wicks</td>
+                    <td>emir.wicks@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle" data-bs-toggle="modal" data-bs-target="#show-1">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+
+                  <div class="modal fade" tabindex="-1" id="show-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body px-32 py-32 d-flex">
+            
+            <img class="show-img" src="/2023hex_web_week5/assets/emir-3d7a4b39.jpeg" alt="">
+            
+            <div class="show-content ms-4">
+                <div class="d-flex justify-content-between">
+                    <p class="mb-2">#1</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <p class="mb-0">Admin</p>
+                <h2 class="fs-4 mb-2">Emir Wicks</h2>
+                <p class="fs-14 text-secondary mb-3">emir.wicks@mail.com</p>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header d-flex justify-content-between">    
+                            <div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div class="show-btn fs-14 py-1 px-2" disabled>Verified</div>
+                            </div>
+                        </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse mt-32" data-bs-parent="#accordionFlushExample">
+                        <div class="d-flex justify-content-between">
+                            <div class="btn btn-outline-danger py-2 px-32">Deactivate</div>
+                            <div class="btn btn-primary py-2 px-32">Edit</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
+                  <tr>
+                    <th scope="row">#2</th>
+                    <td>Zaina Goldsmith</td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#3</th>
+                    <td>Mahima Lopez</td>
+                    <td>mahima.lopez@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#4</th>
+                    <td>Pharrell Murray</td>
+                    <td>pharrell.murray@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#5</th>
+                    <td>Annika Mcbride</td>
+                    <td>annika.mcbride@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#6</th>
+                    <td>Fatimah Clark</td>
+                    <td>fatimah.clark@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#7</th>
+                    <td>Klaudia Rhodes</td>
+                    <td>klaudia.rhodes@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#8</th>
+                    <td>Tillie Lucero</td>
+                    <td>tillie.lucero@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#9</th>
+                    <td>Sabrina Stephenson</td>
+                    <td>sabrina.stephenson@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#10</th>
+                    <td>Annie Smith</td>
+                    <td>annie.smith@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <nav class="admin-pages" aria-label="pages">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link">&lt;</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">&gt;</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
