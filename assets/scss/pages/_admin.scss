@@ -1,0 +1,40 @@
+.admin-table {
+    th {
+        font-weight: normal;
+    }
+
+    tr>th, td {
+        padding: 16px;
+    }
+}
+
+.page-link{
+    border: 1px solid $primary;
+}
+
+#add-new-admin {
+    overflow: hidden;
+}
+
+.show-img {
+    width: 141px;
+    height: 141px;
+}
+
+.show-btn {
+    display: inline-block;
+    background-color: $gray-100;
+    width: auto;
+}
+
+.show-content {
+    width: 100%;
+}
+
+.accordion-button {
+    padding: 0;
+}
+.accordion-button:not(.collapsed) {
+    background-color: $white;
+    box-shadow: none;
+}

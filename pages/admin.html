@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer dashboard</title>
+</head>
+<body>
+    
+    <%- include('./layout/navbar'); -%>
+
+    <div class="main">
+        <div class="container p-32">
+            <nav class="navbar mb-5">
+                <div class="container-fluid">
+                    <div class="navbar-left d-flex">
+                        <a class="navbar-brand fs-4 fw-bold me-5 align-middle" href="#">Admin</a>
+                        <a class="btn d-flex align-items-center p-0 fw-bold" data-bs-toggle="modal" data-bs-target="#add-new-admin">
+                            <span class="material-icons me-1 align-middle">add</span>New Admin
+                        </a>
+
+                        <%- include('./layout/new_admin_modal'); -%>
+                    </div>
+                    <div class="navbar-right">
+                        <a href="#"><span class="material-icons me-4 align-middle">search</span></a>
+                        <a href="#"><span class="material-icons align-middle">notifications_active</span></a>
+                    </div>
+                </div>
+            </nav>
+
+            <table class="table table-hover mt-3 mb-5 admin-table">
+                <thead>
+                  <tr>
+                    <th class="col-1" scope="col">
+                        ID
+                        <span class="material-icons text-success align-middle ps-1">arrow_downward</span>
+                    </th>
+                    <th class="col-3" scope="col">Name</th>
+                    <th class="col-4" scope="col">Email</th>
+                    <th class="col-2" scope="col">Verified</th>
+                    <th class="col-2" scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">#1</th>
+                    <td>Emir Wicks</td>
+                    <td>emir.wicks@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle" data-bs-toggle="modal" data-bs-target="#show-1">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+
+                  <%- include('./layout/show'); -%>
+
+                  <tr>
+                    <th scope="row">#2</th>
+                    <td>Zaina Goldsmith</td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#3</th>
+                    <td>Mahima Lopez</td>
+                    <td>mahima.lopez@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#4</th>
+                    <td>Pharrell Murray</td>
+                    <td>pharrell.murray@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#5</th>
+                    <td>Annika Mcbride</td>
+                    <td>annika.mcbride@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#6</th>
+                    <td>Fatimah Clark</td>
+                    <td>fatimah.clark@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#7</th>
+                    <td>Klaudia Rhodes</td>
+                    <td>klaudia.rhodes@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#8</th>
+                    <td>Tillie Lucero</td>
+                    <td>tillie.lucero@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#9</th>
+                    <td>Sabrina Stephenson</td>
+                    <td>sabrina.stephenson@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#10</th>
+                    <td>Annie Smith</td>
+                    <td>annie.smith@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-end p-0">
+                            <a href="#"><span class="material-icons me-4 align-middle">visibility</span></a>
+                            <a href="#"><span class="material-icons align-middle">edit</span></a>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <nav class="admin-pages" aria-label="pages">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link">&lt;</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">&gt;</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+    
+    
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

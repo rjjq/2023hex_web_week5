@@ -1,0 +1,22 @@
+.nav {
+    position: fixed;
+    min-width: 296px;
+    min-height: 100%;
+    background-color: $gray-100;
+}
+
+.user-avator {
+    width: 40px;
+    height: 40px;
+    background: no-repeat url("../images/andychen.jpeg") center / cover;
+    border-radius: 100%;
+}
+
+.navlink.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #198754;
+  }

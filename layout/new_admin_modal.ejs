@@ -1,0 +1,66 @@
+<div class="modal fade" tabindex="-1" id="add-new-admin" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header p-32 border-bottom-0">
+          <div class="fs-4">New Admin</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-32">
+            <div class="fs-20 fw-bold mb-3">Account</div>
+            
+            <div class="mb-3">
+                <label for="account-name" class="fs-14 form-label mb-1">Name</label>
+                <input type="text" class="form-control" id="account-name">
+            </div>
+            <div class="mb-4">
+                <label for="account-email" class="fs-14 form-label mb-1">Email address</label>
+                <input type="email" class="form-control" id="account-email">
+            </div>
+            <hr class="text-gray-400 mb-4">
+
+            <div class="fs-20 fw-bold mb-3">Verification</div>
+            <div class="fw-bold d-flex align-items-center mb-3">
+                <span class="material-icons me-1 align-middle text-danger">report_problem</span> Unverified
+            </div>
+            <div class="btn btn-outline-primary d-block fw-bold py-3 mb-4">Send Verification Mail</div>
+            <hr class="text-gray-400 mb-4">
+            
+            <div class="fs-20 fw-bold mb-3">Access Level</div>
+            <select class="form-select mb-4 text-gray-600" aria-label="Access Level">
+                <option selected>-Choose access level-</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <hr class="text-gray-400 mb-4">
+            
+            <div class="fs-20 fw-bold mb-3">Custom Access</div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-lecture">
+                <label class="form-check-label" for="check-lecture">Lecture</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-oupon">
+                <label class="form-check-label" for="check-oupon">Coupon</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-message">
+                <label class="form-check-label" for="check-message">Message</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-setting">
+                <label class="form-check-label" for="check-setting">Setting</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check-task-menu">
+                <label class="form-check-label" for="check-task-menu">Task Menu</label>
+            </div>
+
+        </div>
+        <div class="modal-footer mx-32 py-3 px-0">
+          <div class="btn btn-outline-primary me-4 py-2 px-32" data-bs-dismiss="modal">Cancel</div>
+          <div class="btn btn-primary me-0 py-2 px-32">Add</div>
+        </div>
+      </div>
+    </div>
+</div>
